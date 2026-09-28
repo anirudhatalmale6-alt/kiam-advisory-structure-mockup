@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIAM Advisory | Coaching de leadership, formations &amp; KIAMBETSI®</title>
+<meta name="description" content="Sparring, formations et parcours systémiques pour professionnels et dirigeants. Choisissez votre domaine : formations, coaching ou le concept KIAMBETSI®.">
+<link rel="alternate" hreflang="de" href="/de/">
+<link rel="alternate" hreflang="en" href="/en/">
+<link rel="alternate" hreflang="fr" href="/fr/">
+<link rel="alternate" hreflang="x-default" href="/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brand.css">
+<style>
+header.bar{position:sticky;top:0;z-index:40;background:rgba(251,248,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar__in{max-width:1180px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;gap:26px}
+.bar__logo img{height:44px;width:auto;display:block}
+.bar nav{margin-left:auto;display:flex;align-items:center;gap:26px}
+.bar nav a{font-size:14.5px;color:var(--ink);font-weight:500;padding-bottom:3px;border-bottom:2px solid transparent}
+.bar nav a:hover{border-color:var(--gold);color:var(--gold)}
+.switch{position:relative}
+.switch__btn{display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:#fff;cursor:pointer;font-family:inherit}
+.switch__btn:hover{border-color:var(--tan)}
+.switch__menu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:6px;min-width:172px;box-shadow:0 16px 34px rgba(27,2,47,.13);display:none}
+.switch:hover .switch__menu,.switch:focus-within .switch__menu{display:block}
+.switch__menu a{display:flex;gap:10px;align-items:center;padding:9px 12px;border-radius:8px;font-size:14px;color:var(--ink)}
+.switch__menu a:hover{background:var(--sand)}
+.switch__menu a[aria-current]{color:var(--gold);font-weight:600}
+
+.hero{padding:76px 0 26px;text-align:center;
+  background:radial-gradient(900px 420px at 50% 0%, rgba(160,142,119,.16), transparent 62%)}
+.hero h1{font-size:clamp(30px,4.3vw,48px);margin-bottom:18px}
+.hero p{font-size:17.5px;color:var(--ink-70);max-width:620px;margin:0 auto}
+
+.hub{padding:50px 0 74px}
+.hub__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 30px 30px;
+  display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-6px);border-color:var(--tan);box-shadow:0 20px 44px rgba(27,2,47,.10)}
+.card__n{font-family:"Playfair Display",Georgia,serif;font-size:15px;color:var(--tan);letter-spacing:.1em;margin-bottom:16px}
+.card h2{font-size:29px;margin-bottom:6px}
+.card__s{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px}
+.card__d{font-size:15px;color:var(--body);margin:0 0 22px}
+.card ul{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid var(--line)}
+.card li{font-size:14px;color:var(--ink-70);padding:11px 0 11px 20px;border-bottom:1px solid var(--line);position:relative}
+.card li:before{content:"";position:absolute;left:0;top:19px;width:7px;height:7px;border-radius:50%;background:var(--tan)}
+.card .btn{margin-top:auto;text-align:center}
+
+.band{background:var(--ink);color:#fff;padding:62px 0;text-align:center}
+.band h2{color:#fff;font-size:clamp(25px,3.1vw,34px);margin-bottom:12px}
+.band p{color:rgba(255,255,255,.76);max-width:560px;margin:0 auto 28px;font-size:16px}
+
+footer.f{padding:42px 0;font-size:13px;color:var(--ink-70);text-align:center;background:var(--sand)}
+footer.f a{border-bottom:1px solid var(--line);padding-bottom:1px;margin:0 9px}
+footer.f a:hover{color:var(--gold);border-color:var(--gold)}
+
+.burger{display:none;flex-direction:column;gap:4px;background:none;border:0;padding:8px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px}
+
+@media(max-width:1040px){ .hub__grid{grid-template-columns:1fr} }
+@media(max-width:940px){
+  .bar nav a{display:none}
+  .burger{display:flex;order:2}
+  .bar nav{gap:10px}
+  .bar__logo img{height:38px}
+  .switch__btn{padding:8px 11px;font-size:12.5px}
+}
+@media(max-width:600px){ .hero{padding:52px 0 20px} .card{padding:28px 24px} .bar__in{padding:12px 16px;gap:10px} }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar__in">
+    <a class="bar__logo" href="#"><img src="kiam-logo.png" alt="KIAM — Leadership &amp; Systemic Advisory"></a>
+    <nav>
+      <a class="keep" href="#">Accueil</a>
+      <a class="keep" href="#">À propos</a>
+      <a class="keep" href="#">Formations</a>
+      <a class="keep" href="#">Coaching</a>
+      <a class="keep" href="#">KIAMBETSI®</a>
+      <a class="keep" href="#">Contact</a>
+      <div class="switch">
+        <button class="switch__btn" type="button">🇫🇷 Français <span style="font-size:10px">▾</span></button>
+        <div class="switch__menu">
+          <a href="home-fr.html" aria-current="true">🇫🇷 Français</a>
+          <a href="home-en.html">🇬🇧 English</a>
+          <a href="home-de.html">🇩🇪 Deutsch</a>
+        </div>
+      </div>
+      <button class="burger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Leadership &amp; Systemic Advisory</p>
+    <h1>De la clarté dans le leadership,<br>la décision et le développement.</h1>
+    <p>Choisissez le domaine qui correspond à votre situation actuelle.</p>
+  </div>
+</section>
+
+<section class="hub">
+  <div class="wrap">
+    <div class="hub__grid">
+      <article class="card">
+        <div class="card__n">01</div>
+        <h2>Formations</h2>
+        <div class="card__s">Training</div>
+        <p class="card__d">Des programmes et des cours concrets en leadership systémique, conduite d’entretien et prise de décision.</p>
+        <ul><li>30 jours vers une culture d’entreprise systémique</li><li>La boîte à outils systémique de l’entretien</li><li>Le journal de bord systémique du dirigeant</li></ul>
+        <a class="btn" href="#">Découvrir les formations</a>
+      </article>
+      <article class="card">
+        <div class="card__n">02</div>
+        <h2>Coaching</h2>
+        <div class="card__s">Coaching</div>
+        <p class="card__d">Un sparring pour les professionnels et dirigeants face à une décision de carrière ou de leadership — en individuel, en groupe ou pour les organisations.</p>
+        <ul><li>Coaching carrière &amp; décision</li><li>Coaching de dirigeants</li><li>Coaching pour les organisations</li></ul>
+        <a class="btn" href="#">Découvrir le coaching</a>
+      </article>
+      <article class="card">
+        <div class="card__n">03</div>
+        <h2>KIAMBETSI®</h2>
+        <div class="card__s">Concept</div>
+        <p class="card__d">L’approche systémique de KIAM Advisory — et les parcours exécutifs qui en découlent.</p>
+        <ul><li>Programme Exécutif Leadership</li><li>Leadership Stratégique</li><li>Talents &amp; Leadership</li></ul>
+        <a class="btn" href="#">Découvrir le concept</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Vous hésitez entre les trois ?</h2>
+    <p>En 15 minutes, nous clarifions ensemble ce qui vous occupe — gratuitement et sans engagement.</p>
+    <a class="btn btn--cream" href="#">Réserver un premier entretien gratuit</a>
+  </div>
+</section>
+
+<footer class="f">
+  <div class="wrap">
+    <a href="#">Impressum</a><a href="#">Datenschutzerklärung</a><a href="index.html">Langue</a>
+    <div style="margin-top:12px">© 2026 KIAM Leadership &amp; Systemic Advisory</div>
+  </div>
+</footer>
+
+</body></html>
